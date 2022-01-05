@@ -1,0 +1,6 @@
+<h1>Hey! Welcome to VomTown Amusements!</h1>
+<% if current_user %>
+    <%= form_for :session, url: '/logout', method: :POST do |f| %>
+        <%= f.submit "Logout" %>
+    <% end %>
+<% end %>
